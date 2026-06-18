@@ -3,10 +3,14 @@ body{
     margin: 0;
 }
 :root{
-    --color-primary: #a31515;
+    --color-primary: #D81B60;
+    --color-secundary: #FDF5E6;
+    --tertiary: #98FF98;
+    --neutral: #3E2723;
+    --card-radius: 13px;
 }
 .hero{
-    margin-top: 10rem;
+    margin-top: 3rem;
     padding: 4rem;
     span{
         font-size: 1.3rem;
@@ -25,4 +29,41 @@ body{
     p{
         width: 350px;
     }
+}
+
+.history{
+    margin-left: 4rem;
+    margin-right: 4rem;
+    h3{
+        margin-left: 1rem;
+        font-size: 1.5rem;
+    }
+    p{
+        margin-left: 1rem;
+        margin-right: 1.2rem;
+    }
+}
+.contant{
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.origin{
+    background-color: var(--other-color);
+    border-radius: var(--card-radius)  ;
+}
+.mision{
+    width: 40rem;
+    background-color: var(--color-secundary);
+    border-radius: var(--card-radius);
+}
+.values{
+    width: 40rem;
+    border-radius: var(--card-radius);
+    background-color: aqua;
+}
+
+.vision{
+    background-color: antiquewhite;
+    border-radius: var(--card-radius);
 }
