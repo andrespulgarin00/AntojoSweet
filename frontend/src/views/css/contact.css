@@ -57,30 +57,7 @@
         }
 
         
-        .btn-text {
-            background: none;
-            border: none;
-            color: var(--secondary);
-            font-weight: 600;
-            cursor: pointer;
-            padding: 8px 16px;
-        }
-
-        .btn-primary {
-            background-color: var(--primary);
-            color: var(--on-primary);
-            border: none;
-            padding: 10px 24px;
-            border-radius: 9999px;
-            font-weight: 600;
-            cursor: pointer;
-            box-shadow: 0 4px 6px rgba(176, 0, 74, 0.1);
-            transition: var(--transition);
-        }
-
-        .btn-primary:hover {
-            transform: scale(1.05);
-        }
+        
 
         /* Hero Section */
         .hero {
@@ -385,63 +362,7 @@
         }
 
         /* Footer */
-        footer {
-            background-color: var(--surface-container-low);
-            padding-top: var(--stack-xl);
-            margin-top: var(--stack-xl);
-        }
-
-        .footer-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: var(--gutter);
-            padding-bottom: var(--stack-xl);
-        }
-
-        @media (min-width: 768px) {
-            .footer-grid { grid-template-columns: 2fr 1fr 1fr 2fr; }
-        }
-
-        footer h4 { color: var(--primary); font-size: 14px; margin-bottom: 24px; font-family: 'Be Vietnam Pro', sans-serif; font-weight: 700; }
-        footer ul { list-style: none; }
-        footer ul li { margin-bottom: 16px; }
-        footer a { text-decoration: none; color: var(--secondary); font-size: 14px; transition: var(--transition); }
-        footer a:hover { color: var(--primary); }
-        footer .active-link { color: var(--primary); text-decoration: underline; font-weight: 600; }
-
-        .newsletter-form {
-            display: flex;
-            margin-top: 16px;
-        }
-
-        .newsletter-form input {
-            background: var(--surface);
-            border: none;
-            padding: 12px 16px;
-            border-radius: 12px 0 0 12px;
-            flex-grow: 1;
-            font-family: inherit;
-        }
-
-        .newsletter-btn {
-            background: var(--primary);
-            color: white;
-            border: none;
-            padding: 0 16px;
-            border-radius: 0 12px 12px 0;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-        }
-
-        .footer-bottom {
-            border-top: 1px solid var(--surface-container-high);
-            padding: 24px 0;
-            text-align: center;
-            font-size: 12px;
-            color: var(--secondary);
-        }
-
+       
         /* Utils */
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
