@@ -1,0 +1,28 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --color-primary: #a31515;
+}
+.hero{
+    margin-top: 10rem;
+    padding: 4rem;
+    span{
+        font-size: 1.3rem;
+        color: var(--color-primary);
+        opacity: 79%;
+    }
+    h5{
+        margin-top: 1rem;
+        font-size: 3rem;
+    }
+    h1{
+        font-size: 3rem;
+        margin-top: -5rem;
+        color: var(--color-primary);
+    }
+    p{
+        width: 350px;
+    }
+}
