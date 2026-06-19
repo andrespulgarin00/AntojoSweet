@@ -1,3 +1,4 @@
+export default function header (){
 document.getElementById("header").innerHTML = `
 <style>
 .btn-text {
@@ -149,3 +150,4 @@ document.getElementById("header").innerHTML = `
     </nav>
 
 `
+}
