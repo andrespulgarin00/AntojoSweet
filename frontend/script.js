@@ -1,131 +1,94 @@
-document.addEventListener("DOMContentLoaded", () => {
-  if (!document.getElementById("theme-styles")) {
-    const link = document.createElement("link");
-    link.rel = "stylesheet";
-    link.href = "styles.css";
-    link.id = "theme-styles";
-    document.head.appendChild(link);
-  }
-
-  const paginaSelect = document.getElementById("pagina");
-  const btnPersonajes = document.getElementById("btn-personajes");
-  const btnPlanetas = document.getElementById("btn-planetas");
-  const resultado = document.getElementById("resultado");
-
-  for (let i = 1; i <= 7; i++) {
-    const option = document.createElement("option");
-    option.value = i;
-    option.textContent = i;
-    paginaSelect.appendChild(option);
-  }
-
-  paginaSelect.addEventListener("change", (e) => {
-    apiRickandMortyLocation(e.target.value);
-  });
-
-  btnPersonajes.addEventListener("click", () => {
-    setActiveView("personajes");
-  });
-
-  btnPlanetas.addEventListener("click", () => {
-    setActiveView("planetas");
-  });
-
-  setActiveView("planetas");
-});
-
-const dbzApiUrls = [
-    "https://dragonball-api.com/api/characters"
-  ];
-
-const setActiveView = (view) => {
-  const btnPersonajes = document.getElementById("btn-personajes");
-  const btnPlanetas = document.getElementById("btn-planetas");
-  const paginaSelect = document.getElementById("pagina");
-  const container = paginaSelect.closest(".col-6");
-
-  btnPersonajes.classList.toggle("active", view === "personajes");
-  btnPlanetas.classList.toggle("active", view === "planetas");
-
-  if (view === "personajes") {
-    container.style.display = "none";
-    loadDbzCharacters();
-  } else {
-    container.style.display = "block";
-    apiRickandMortyLocation(document.getElementById("pagina").value || 1);
-  }
-};
-
-const loadDbzCharacters = async () => {
-  const divRes = document.querySelector("#resultado");
-  divRes.innerHTML = "";
-  const errorMessage = document.createElement("p");
-  errorMessage.textContent = "Cargando personajes de Dragon Ball Z...";
-  divRes.appendChild(errorMessage);
-
-  for (const URL of dbzApiUrls) {
-    try {
-      const response = await fetch(URL);
-      if (!response.ok) throw new Error(`HTTP ${response.status}`);
-      const data = await response.json();
-      const results = Array.isArray(data) ? data : data.results || data.characters || [];
-
-      if (!results.length) continue;
-
-      divRes.innerHTML = "";
-      results.forEach((item) => {
-        const divItem = document.createElement("div");
-        divItem.className = "card";
-        const name = item.name || item.character || "Sin nombre";
-        const gender = item.gender || item.sex || item.Gender || "Desconocido";
-        const faseta = item.fase || item.phase || item.stage || item.race || item.species || item.type || item.category || "Desconocido";
-        const image = item.image || item.img || item.avatar || item.imageUrl || "";
-
-        divItem.innerHTML = `
-          ${image ? `<img src="${image}" alt="${name}" />` : ""}
-          <div class="card-body">
-            <h2>${name}</h2>
-            <p>Género: ${gender}</p>
-            <p>Faseta: ${faseta}</p>
-          </div>
-        `;
-        divRes.appendChild(divItem);
-      });
-      return;
-    } catch (error) {
-      console.warn(`Fallo con ${URL}:`, error);
-    }
-  }
-
-  divRes.innerHTML = "";
-  const fail = document.createElement("p");
-  fail.textContent = "No se pudo cargar la API de Dragon Ball Z. Intenta nuevamente más tarde.";
-  divRes.appendChild(fail);
-};
-
-const apiRickandMortyLocation = async (pagina) => {
-  const URL = `https://rickandmortyapi.com/api/location?page=${pagina}`;
-
-  try {
-    const response = await fetch(URL);
-    const data = await response.json();
-    const divRes = document.querySelector("#resultado");
-    divRes.innerHTML = "";
-    data.results.forEach((item) => {
-      const divItem = document.createElement("div");
-      divItem.className = "card";
-      divItem.innerHTML = `
-        <div class="card-body">
-          <h2>${item.name}</h2>
-          <p>Tipo: ${item.type || "Desconocido"}</p>
-          <p>Dimensión: ${item.dimension || "Desconocido"}</p>
-        </div>
-      `;
-      divRes.appendChild(divItem);
-    });
-  } catch (error) {
-    console.error("ERROR:", error);
-    const divRes = document.querySelector("#resultado");
-    divRes.innerHTML = "<p>No se pudo cargar los planetas de Rick and Morty.</p>";
-  }
-};
+tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-high": "#ffe2dd",
+                    "surface-container-highest": "#ffdad4",
+                    "on-tertiary-fixed": "#002105",
+                    "on-tertiary": "#ffffff",
+                    "on-background": "#2b1613",
+                    "error-container": "#ffdad6",
+                    "primary-fixed-dim": "#ffb2bf",
+                    "on-error": "#ffffff",
+                    "surface": "#fff8f6",
+                    "outline": "#8e6f74",
+                    "tertiary": "#00671d",
+                    "on-tertiary-container": "#ddffd6",
+                    "secondary-fixed": "#e9e2d3",
+                    "primary": "#b0004a",
+                    "on-primary-fixed": "#3f0016",
+                    "primary-fixed": "#ffd9de",
+                    "outline-variant": "#e3bdc3",
+                    "secondary-fixed-dim": "#cdc6b8",
+                    "surface-bright": "#fff8f6",
+                    "on-secondary-fixed": "#1e1b13",
+                    "primary-container": "#d81b60",
+                    "on-primary-fixed-variant": "#90003b",
+                    "on-primary-container": "#fff2f3",
+                    "surface-container": "#ffe9e5",
+                    "on-secondary-container": "#696458",
+                    "on-secondary": "#ffffff",
+                    "secondary": "#635e53",
+                    "on-tertiary-fixed-variant": "#005316",
+                    "surface-variant": "#ffdad4",
+                    "error": "#ba1a1a",
+                    "tertiary-fixed-dim": "#77dc7a",
+                    "inverse-primary": "#ffb2bf",
+                    "inverse-surface": "#422a26",
+                    "tertiary-fixed": "#93f993",
+                    "surface-tint": "#bc004f",
+                    "on-surface": "#2b1613",
+                    "inverse-on-surface": "#ffedea",
+                    "surface-container-low": "#fff0ee",
+                    "on-surface-variant": "#5a4044",
+                    "on-error-container": "#93000a",
+                    "secondary-container": "#e9e2d3",
+                    "surface-dim": "#f8d1cb",
+                    "on-primary": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary-fixed-variant": "#4b463c",
+                    "background": "#fff8f6",
+                    "tertiary-container": "#14822c"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-desktop": "64px",
+                    "container-max": "1200px",
+                    "stack-lg": "48px",
+                    "stack-xs": "4px",
+                    "gutter": "24px",
+                    "margin-mobile": "20px",
+                    "stack-xl": "80px",
+                    "stack-sm": "12px",
+                    "unit": "8px",
+                    "stack-md": "24px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Playfair Display"],
+                    "label-md": ["Be Vietnam Pro"],
+                    "display-lg": ["Playfair Display"],
+                    "headline-lg-mobile": ["Playfair Display"],
+                    "headline-lg": ["Playfair Display"],
+                    "label-sm": ["Be Vietnam Pro"],
+                    "body-lg": ["Be Vietnam Pro"],
+                    "body-md": ["Be Vietnam Pro"]
+            },
+            "fontSize": {
+                    "headline-md": ["28px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "label-md": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "display-lg": ["56px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "headline-lg": ["40px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "label-sm": ["12px", {"lineHeight": "1.4", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
