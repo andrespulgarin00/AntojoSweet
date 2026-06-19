@@ -57,6 +57,7 @@
         }
 
         
+<<<<<<< HEAD
         .btn-text {
             background: none;
             border: none;
@@ -81,6 +82,9 @@
         .btn-primary:hover {
             transform: scale(1.05);
         }
+=======
+        
+>>>>>>> 049e608d5ad2030e16d72775e4bd3ab5e1f7e2d3
 
         /* Hero Section */
         .hero {
@@ -385,6 +389,7 @@
         }
 
         /* Footer */
+<<<<<<< HEAD
         footer {
             background-color: var(--surface-container-low);
             padding-top: var(--stack-xl);
@@ -442,6 +447,9 @@
             color: var(--secondary);
         }
 
+=======
+       
+>>>>>>> 049e608d5ad2030e16d72775e4bd3ab5e1f7e2d3
         /* Utils */
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;

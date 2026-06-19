@@ -1,5 +1,32 @@
 document.getElementById("header").innerHTML = `
 <style>
+<<<<<<< HEAD
+=======
+.btn-text {
+            background: none;
+            border: none;
+            color: var(--secondary);
+            font-weight: 600;
+            cursor: pointer;
+            padding: 8px 16px;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: var(--on-primary);
+            border: none;
+            padding: 10px 24px;
+            border-radius: 9999px;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(176, 0, 74, 0.1);
+            transition: var(--transition);
+        }
+
+        .btn-primary:hover {
+            transform: scale(1.05);
+        }
+>>>>>>> 049e608d5ad2030e16d72775e4bd3ab5e1f7e2d3
 :root {
             /* Colors from Design System */
             --primary: #b0004a;
