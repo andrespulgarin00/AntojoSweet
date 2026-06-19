@@ -1,6 +1,8 @@
-
-document.getElementById("footer").innerHTML = `
-<style>
+export default function footer() {
+    const footerElemet = document.getElementById("footer")
+    if (!footerElemet)return;
+    footerElemet.innerHTML = `
+    <style>
     :root {
             /* Colors from Design System */
             --primary: #b0004a;
@@ -141,3 +143,5 @@ document.getElementById("footer").innerHTML = `
         </div>
     </footer>
 `
+console.log("da")
+}
