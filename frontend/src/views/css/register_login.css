@@ -6,11 +6,11 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #faf4f4;
+    background-color: #fff8f6;
 }
 
 header{
-    border-bottom: 1px solid #e6dede;
+    border-bottom: 1px solid #e3bdc3;
     padding: 20px 80px;
 }
 
@@ -23,7 +23,7 @@ header{
 .logo{
     font-size: 32px;
     font-weight: bold;
-    color: #c952cd;
+    color: #b0004a;
 }
 
 .menu{
@@ -34,7 +34,7 @@ header{
 
 .menu a{
     text-decoration: none;
-    color: #444;
+    color: #5a4044;
 }
 
 .buttons{
@@ -51,12 +51,12 @@ header{
 
 .btn-login{
     background: transparent;
-    color: #a424ad;
+    color: #b0004a;
 }
 
 .btn-register{
-    background: #9a2b87;
-    color: white;
+    background: #b0004a;
+    color: #ffffff;
 }
 
 .contenedor{
@@ -74,11 +74,11 @@ header{
 
 .informacion h1{
     font-size: 70px;
-    color: #2b1616;
+    color: #2b1613;
 }
 
 .informacion span{
-    color: #b942c2;
+    color: #bc004f;
     font-style: italic;
 }
 
@@ -86,7 +86,7 @@ header{
     margin-top: 20px;
     font-size: 22px;
     line-height: 1.6;
-    color: #555;
+    color: #5a4044;
 }
 
 .imagenes{
@@ -105,7 +105,7 @@ header{
 
 .formulario{
     width: 420px;
-    background: white;
+    background: #ffffff;
     padding: 30px;
     border-radius: 25px;
     box-shadow: 0 0 15px rgba(0,0,0,.08);
@@ -113,7 +113,7 @@ header{
 
 .tabs{
     display: flex;
-    background: #f8e6e6;
+    background: #ffe9e5;
     border-radius: 30px;
     padding: 5px;
     margin-bottom: 30px;
@@ -129,19 +129,19 @@ header{
 }
 
 .tabs .activo{
-    background: white;
+    background: #ffffff;
     font-weight: bold;
 }
 
 .formulario h2{
     font-size: 35px;
     margin-bottom: 10px;
-    color: #2b1616;
+    color: #2b1613;
 }
 
 .formulario p{
     margin-bottom: 25px;
-    color: #666;
+    color: #5a4044;
 }
 
 .campo{
@@ -153,14 +153,14 @@ header{
 .campo label{
     margin-bottom: 8px;
     font-weight: bold;
-    color: #555;
+    color: #5a4044;
 }
 
 .campo input{
     padding: 15px;
     border: none;
     border-radius: 12px;
-    background: #f8eaea;
+    background: #ffe9e5;
 }
 
 .btn-formulario{
@@ -168,20 +168,20 @@ header{
     padding: 15px;
     border: none;
     border-radius: 12px;
-    background: #df43e4;
-    color: white;
+    background: #b0004a;
+    color: #ffffff;
     font-size: 18px;
     cursor: pointer;
     margin-top: 15px;
 }
 
 .btn-formulario:hover{
-    background: #c57fe9;
+    background: #d81b60;
 }
 
 footer{
     margin-top: 80px;
-    background: #e35ff5;
+    background: #ffdad4;
     padding: 60px 80px;
 }
 
@@ -194,7 +194,7 @@ footer{
 
 .footer-contenedor h3,
 .footer-contenedor h4{
-    color: #b10d5b;
+    color: #b0004a;
     margin-bottom: 15px;
 }
 
@@ -204,7 +204,7 @@ footer{
 
 .footer-contenedor li{
     margin-bottom: 10px;
-    color: #555;
+    color: #5a4044;
 }
 
 .footer-info{
@@ -212,6 +212,6 @@ footer{
 }
 
 .footer-info p{
-    color: #555;
+    color: #5a4044;
     line-height: 1.6;
 }
