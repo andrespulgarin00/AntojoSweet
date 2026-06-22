@@ -11,28 +11,12 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
         rel="stylesheet" />
-    <link rel="stylesheet" href="/frontend/src/views/css/style.css" />
+    <link rel="stylesheet" href="src/views/css/style.css" />
 
 </head>
 
 <body>
-    <nav>
-        <div class="container nav-content">
-            <div class="logo">Antojo Sweet</div>
-            <div class="nav-links">
-                <a class="active" href="#">Inicio</a>
-                <a href="#">Catálogo</a>
-                <a href="#">Contacto</a>
-            </div>
-            <div class="nav-actions">
-                <button class="btn-login">Iniciar sesión</button>
-                <button class="btn-register">Registrarse</button>
-                <div class="mobile-toggle">
-                    <span class="material-symbols-outlined">menu</span>
-                </div>
-            </div>
-        </div>
-    </nav>
+    <div id="header"></div>
     <main>
 
         <section class="hero">
@@ -169,45 +153,8 @@
             </div>
         </section>
     </main>
-    <footer>
-        <div class="container footer-grid">
-            <div class="footer-brand">
-                <div class="logo">Antojo Sweet</div>
-                <p>Elevando el arte de la pastelería para un mundo moderno, bocado a bocado.</p>
-                <div class="social-links">
-                    <a class="social-btn" href="#"><span class="material-symbols-outlined">share</span></a>
-                    <a class="social-btn" href="#"><span class="material-symbols-outlined">public</span></a>
-                </div>
-            </div>
-            <div class="footer-col">
-                <h5>Empresa</h5>
-                <ul class="footer-links">
-                    <li><a href="#">Sobre nosotros</a></li>
-                    <li><a href="#">Empleo</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h5>Política</h5>
-                <ul class="footer-links">
-                    <li><a href="#">Política de envíos</a></li>
-                    <li><a href="#">Política de privacidad</a></li>
-                    <li><a href="#">Términos de servicio</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h5>Soporte</h5>
-                <ul class="footer-links">
-                    <li><a href="#">Preguntas frecuentes</a></li>
-                    <li><a href="#">Rastrear pedido</a></li>
-                    <li><a href="#">Venta al por mayor</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>© 2024 Antojo Sweet. Elaborado con amor.</p>
-        </div>
-    </footer>
+    <div id="footer"></div>
+    <script type="module" src="src/utils/index.js"></script>
 </body>
 
 </html>
