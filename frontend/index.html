@@ -19,40 +19,7 @@
 
 <body class="font-body-md text-on-background">
 
-    <nav class="fixed top-0 w-full z-50 bg-surface/80 glass-nav shadow-sm h-20">
-        <div
-            class="flex justify-between items-center h-full px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto relative">
-            <div class="font-headline-md text-headline-md font-bold text-primary">Antojo Sweet</div>
-            <div class="hidden md:flex gap-8 items-center">
-                <a class="font-label-md text-label-md text-primary border-b-2 border-primary pb-1" href="#">Inicio</a>
-                <a class="font-label-md text-label-md text-secondary hover:text-primary transition-colors"
-                    href="#">Catálogo</a>
-                <a class="font-label-md text-label-md text-secondary hover:text-primary transition-colors"
-                    href="#">Contacto</a>
-            </div>
-            <div class="flex items-center gap-4">
-                <button
-                    class="hidden md:block font-label-md text-label-md text-primary px-4 py-2 hover:scale-105 transition-transform">Iniciar sesión</button>
-                <button
-                    class="bg-primary text-on-primary font-label-md text-label-md px-6 py-2.5 rounded-full squishy-btn shadow-md">Registrarse</button>
-
-                <label class="md:hidden flex items-center justify-center p-2 cursor-pointer" for="mobile-menu-toggle">
-                    <span class="material-symbols-outlined text-primary">menu</span>
-                </label>
-            </div>
-        </div>
-        <input class="hidden peer" id="mobile-menu-toggle" type="checkbox" />
-        <div class="hidden peer-checked:flex flex-col absolute top-20 left-0 w-full bg-white border-b border-outline-variant/30 md:hidden animate-fade-in shadow-lg"
-            id="mobile-menu">
-            <a class="p-6 font-label-md text-label-md text-primary bg-surface" href="#">Inicio</a>
-            <a class="p-6 font-label-md text-label-md text-secondary border-t border-outline-variant/10"
-                href="#">Catálogo</a>
-            <a class="p-6 font-label-md text-label-md text-secondary border-t border-outline-variant/10"
-                href="#">Contacto</a>
-            <a class="p-6 font-label-md text-label-md text-primary border-t border-outline-variant/10"
-                href="#">Iniciar sesión</a>
-        </div>
-    </nav>
+    <div id="header"></div>
     <main class="pt-20">
 
         <section class="relative min-h-[870px] flex items-center overflow-hidden">
@@ -238,70 +205,9 @@
         </section>
     </main>
 
-    <footer class="w-full mt-stack-xl bg-surface-container-low">
-        <div
-            class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-stack-xl max-w-container-max mx-auto">
-            <div class="col-span-1 md:col-span-1">
-                <div class="font-headline-md text-headline-md text-primary mb-6">Antojo Sweet</div>
-                <p class="font-body-md text-body-md text-secondary mb-6">Elevando el arte de la pastelería para un mundo
-                    moderno, bocado a bocado.</p>
-                <div class="flex gap-4">
-                    <a class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center hover:bg-primary-container hover:text-on-primary-container transition-all group"
-                        href="#">
-                        <span class="material-symbols-outlined text-[20px]">share</span>
-                    </a>
-                    <a class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center hover:bg-primary-container hover:text-on-primary-container transition-all group"
-                        href="#">
-                        <span class="material-symbols-outlined text-[20px]">public</span>
-                    </a>
-                </div>
-            </div>
-            <div>
-                    <h5 class="font-label-md text-label-md text-primary mb-6 uppercase tracking-wider">Empresa</h5>
-                <ul class="space-y-4">
-                        <li><a class="text-secondary hover:text-primary transition-colors font-body-md" href="#">Sobre
-                            nosotros</a></li>
-                        <li><a class="text-secondary hover:text-primary transition-colors font-body-md" href="#">Empleo</a>
-                        </li>
-                        <li><a class="text-secondary hover:text-primary transition-colors font-body-md" href="#">Contacto</a>
-                        </li>
-                </ul>
-            </div>
-            <div>
-                <h5 class="font-label-md text-label-md text-primary mb-6 uppercase tracking-wider">Política</h5>
-                <ul class="space-y-4">
-                        <li><a class="text-secondary hover:text-primary transition-colors font-body-md" href="#">Política
-                            de envíos</a></li>
-                        <li><a class="text-secondary hover:text-primary transition-colors font-body-md" href="#">Política
-                            de privacidad</a></li>
-                        <li><a class="text-secondary hover:text-primary transition-colors font-body-md" href="#">Términos de
-                            servicio</a></li>
-                </ul>
-            </div>
-            <div>
-                <h5 class="font-label-md text-label-md text-primary mb-6 uppercase tracking-wider">Soporte</h5>
-                <ul class="space-y-4">
-                        <li><a class="text-secondary hover:text-primary transition-colors font-body-md" href="#">Preguntas
-                            frecuentes</a>
-                        </li>
-                        <li><a class="text-secondary hover:text-primary transition-colors font-body-md" href="#">Rastrear
-                            pedido</a></li>
-                        <li><a class="text-secondary hover:text-primary transition-colors font-body-md"
-                            href="#">Venta al por mayor</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="border-t border-outline-variant/30 py-8 text-center">
-            <p class="font-label-sm text-label-sm text-secondary">© 2024 Antojo Sweet. Elaborado con amor.</p>
-        </div>
+        <div id="footer"></div>
+        <script type="module" src="src/utils/index.js"></script>
 
-
-
-    <script src="/frontend/src/models/app.js"></script>
-
-
-
-    </footer>
 </body>
 
 </html>

@@ -1,246 +1,263 @@
 <!DOCTYPE html>
 
-<html lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Antojo Sweet - Admin Dashboard</title>
-<link rel="stylesheet" href="../css/dashboard.css">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&amp;family=Be+Vietnam+Pro:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Antojo Sweet - Admin Dashboard</title>
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&amp;family=Be+Vietnam+Pro:wght@400;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
 </head>
+
 <body>
     <aside>
-    <div class="brand-area">
-    <h1>Antojo Sweet</h1>
-    <p>ARTISANAL PATISSERIE</p>
-    </div>
-    <div class="admin-profile">
-    <img alt="Admin" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBENyJCJa0kFMU7d1BO91Hf2trd1ym2fCmHeZJYV-kVxSvXw8mNRtI4x0XmscdXfcLMJqZTF-uqKl4wi2-McDjMZP4jHkMhtkGQTvs79cFBo7daw2ZlYkoGpDOgftU8dIV1ivG-mYv9EkUzhMk3NOnlZF4PtGPeq6vOBC2OyJVAJOn0WOgbPL9gKUI1eu3MSc-3CzPftYxzrqWM2ya2k0Q6vho9rWKwJ_yHO2g6FPK_QGL2iM4OuNdyrId0YepR36WEGFd-vCjHptLp"/>
-    <div>
-    <p>Admin Panel</p>
-    <p>Manage Antojo</p>
-    </div>
-    </div>
-    <nav>
-    <a class="nav-link" href="#">
-    <span class="material-symbols-outlined">dashboard</span>
-                    Dashboard
-                </a>
-    <a class="nav-link active" href="#">
-    <span class="material-symbols-outlined">bakery_dining</span>
-                    Products
-                </a>
-    <a class="nav-link" href="#">
-    <span class="material-symbols-outlined">shopping_bag</span>
-                    Orders
-                </a>
-    <a class="nav-link" href="#">
-    <span class="material-symbols-outlined">settings</span>
-                    Settings
-                </a>
-    </nav>
-    <div class="sidebar-footer">
-    <label class="btn-add-new" for="modal-trigger">
-    <span class="material-symbols-outlined">add_circle</span>
-                    Add New Dessert
-                </label>
-    <a class="nav-link logout-link" href="#">
-    <span class="material-symbols-outlined">logout</span>
-                    Logout
-                </a>
-    </div>
+        <div class="brand-area">
+            <h1>Antojo Sweet</h1>
+            <p>ARTISANAL PATISSERIE</p>
+        </div>
+        <div class="admin-profile">
+            <img alt="Admin"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBENyJCJa0kFMU7d1BO91Hf2trd1ym2fCmHeZJYV-kVxSvXw8mNRtI4x0XmscdXfcLMJqZTF-uqKl4wi2-McDjMZP4jHkMhtkGQTvs79cFBo7daw2ZlYkoGpDOgftU8dIV1ivG-mYv9EkUzhMk3NOnlZF4PtGPeq6vOBC2OyJVAJOn0WOgbPL9gKUI1eu3MSc-3CzPftYxzrqWM2ya2k0Q6vho9rWKwJ_yHO2g6FPK_QGL2iM4OuNdyrId0YepR36WEGFd-vCjHptLp" />
+            <div>
+                <p>Admin Panel</p>
+                <p>Manage Antojo</p>
+            </div>
+        </div>
+        <nav>
+            <a class="nav-link" href="#">
+                <span class="material-symbols-outlined">dashboard</span>
+                Dashboard
+            </a>
+            <a class="nav-link active" href="#">
+                <span class="material-symbols-outlined">bakery_dining</span>
+                Products
+            </a>
+            <a class="nav-link" href="#">
+                <span class="material-symbols-outlined">shopping_bag</span>
+                Orders
+            </a>
+            <a class="nav-link" href="#">
+                <span class="material-symbols-outlined">settings</span>
+                Settings
+            </a>
+        </nav>
+        <div class="sidebar-footer">
+            <label class="btn-add-new" for="modal-trigger">
+                <span class="material-symbols-outlined">add_circle</span>
+                Add New Dessert
+            </label>
+            <a class="nav-link logout-link" href="#">
+                <span class="material-symbols-outlined">logout</span>
+                Logout
+            </a>
+        </div>
     </aside>
     <main>
-    <header>
-    <div>
-    <h2>Product Management</h2>
-    <p>Update, track, and curate your indulgent dessert catalog.</p>
-    </div>
-    <div class="header-actions">
-    <div class="search-container">
-    <span class="material-symbols-outlined">search</span>
-    <input placeholder="Search desserts..." type="text"/>
-    </div>
-    <button class="btn-filter">
-    <span class="material-symbols-outlined">filter_list</span>
-                        Filter
-                    </button>
-    </div>
-    </header>
-    <section class="stats-grid">
-    <div class="stat-card primary">
-    <div class="stat-icon">
-    <span class="material-symbols-outlined">cake</span>
-    </div>
-    <p class="stat-label">Total Products</p>
-    <p class="stat-value">42</p>
-    </div>
-    <div class="stat-card tertiary">
-    <div class="stat-icon">
-    <span class="material-symbols-outlined">trending_up</span>
-    </div>
-    <p class="stat-label">Active Orders</p>
-    <p class="stat-value">18</p>
-    </div>
-    <div class="stat-card container">
-    <div class="stat-icon">
-    <span class="material-symbols-outlined">star</span>
-    </div>
-    <p class="stat-label">Top Flavor</p>
-    <p class="stat-value">Pistachio</p>
-    </div>
-    </section>
-    <section class="table-container">
-    <table>
-    <thead>
-    <tr>
-    <th>Product</th>
-    <th>Category</th>
-    <th>Price</th>
-    <th>Stock</th>
-    <th style="text-align: right;">Actions</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-    <td>
-    <div class="product-info">
-    <div class="product-img">
-    <img alt="Raspberry Velvet" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0ZYVsqZke2OhH0XXWN_PqsADY7Q484xcqih5mK6J75dwEa9TPGW3QJa5WNzHPmAmSzY4KVaEBLeF414DiFQibb2tShf1WXnjk9xqgNKsMjrY55TxcE44Pa2P7C9LrTpmi5zKCB8OL_tQfPrJMr2OUflvh40NXR-vYpu7JIuwEg34JAxobsOp7vrSJ5rGzS3u42d2Lj1W_dEmlnUFek_c7wD9aQxOG6Yr5jVIqgM7VYzBJzFQJ-kaYnys_Fmvzs8cqZ6EXsphDSX91"/>
-    </div>
-    <div>
-    <p class="product-name">Raspberry Velvet</p>
-    <p class="product-desc">Double-filled artisanal macaron</p>
-    </div>
-    </div>
-    </td>
-    <td><span class="badge badge-macarons">Macarons</span></td>
-    <td class="price-cell">$4.50</td>
-    <td>
-    <div class="stock-status">
-    <div class="dot success"></div>
-    <span>In Stock</span>
-    </div>
-    </td>
-    <td class="actions-cell">
-    <button class="btn-action edit"><span class="material-symbols-outlined">edit</span></button>
-    <button class="btn-action delete"><span class="material-symbols-outlined">delete</span></button>
-    </td>
-    </tr>
-    <tr>
-    <td>
-    <div class="product-info">
-    <div class="product-img">
-    <img alt="Dark Truffle Cloud" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCkr-eh-aSknAc7sai2KVLBnd4AWy17t64rbMgpHbjPdqz2mG3EsT4X94C4kJMqisegieKVkzt62Xp8rvMzMALAdxL-87AOAZ1dxL1F1iJusgvuGF39ICNLryjvOnNZRzrNP4lSkiNEfmpKWpJdyZzkd4Qm5zj1JXtVXfzzeqvX6PhD7dOGMidLNo3bSzv6i3XZZFOSciBXE4Dhb9NwxfYW4QcHLpn7KdaeUwAQT-dcxMwnLPyk8Ox2aQ6yfMuLLsTtj8Sx7psiosf"/>
-    </div>
-    <div>
-    <p class="product-name">Dark Truffle Cloud</p>
-    <p class="product-desc">70% cacao with edible gold leaf</p>
-    </div>
-    </div>
-    </td>
-    <td><span class="badge badge-cakes">Cakes</span></td>
-    <td class="price-cell">$32.00</td>
-    <td>
-    <div class="stock-status">
-    <div class="dot danger"></div>
-    <span class="stock-danger">Low Stock (2)</span>
-    </div>
-    </td>
-    <td class="actions-cell">
-    <button class="btn-action edit"><span class="material-symbols-outlined">edit</span></button>
-    <button class="btn-action delete"><span class="material-symbols-outlined">delete</span></button>
-    </td>
-    </tr>
-    <tr>
-    <td>
-    <div class="product-info">
-    <div class="product-img">
-    <img alt="Tahitian Vanilla Eclair" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACI0qc7Qpebwonf793rs-0DUeLjaCNiPgDFBkh9rNs7TVOtzbbP8OBnqkCFk1FeVB_BsqlSh_ysPrI2JJRiDmfdvgn69hnJs2x6_Z13qtKhG8c1B83vBEPZ4bPVAFlAQ567nmSw1kD5vOkhhmBJyqvnU6l5i0x7RwhtxbiKczM5bqcg1xluHK-vCOBvJQOY7JQDs4oWZWcgFPkHU4w07umDUyb37L_m2av7sb_vPUshJUTIxDBXo7zYkX1rBXbO2DPeUbWhnSbUk49"/>
-    </div>
-    <div>
-    <p class="product-name">Tahitian Vanilla Eclair</p>
-    <p class="product-desc">Classic choux with bean-infused cream</p>
-    </div>
-    </div>
-    </td>
-    <td><span class="badge badge-pastries">Pastries</span></td>
-    <td class="price-cell">$6.50</td>
-    <td>
-    <div class="stock-status">
-    <div class="dot success"></div>
-    <span>In Stock</span>
-    </div>
-    </td>
-    <td class="actions-cell">
-    <button class="btn-action edit"><span class="material-symbols-outlined">edit</span></button>
-    <button class="btn-action delete"><span class="material-symbols-outlined">delete</span></button>
-    </td>
-    </tr>
-    </tbody>
-    </table>
-    <div class="pagination">
-    <p class="pagination-info">Showing 3 of 42 products</p>
-    <div class="pagination-controls">
-    <button class="page-btn"><span class="material-symbols-outlined">chevron_left</span></button>
-    <button class="page-btn active">1</button>
-    <button class="page-btn">2</button>
-    <button class="page-btn"><span class="material-symbols-outlined">chevron_right</span></button>
-    </div>
-    </div>
-    </section>
+        <header>
+            <div>
+                <h2>Product Management</h2>
+                <p>Update, track, and curate your indulgent dessert catalog.</p>
+            </div>
+            <div class="header-actions">
+                <div class="search-container">
+                    <span class="material-symbols-outlined">search</span>
+                    <input placeholder="Search desserts..." type="text" />
+                </div>
+                <button class="btn-filter">
+                    <span class="material-symbols-outlined">filter_list</span>
+                    Filter
+                </button>
+            </div>
+        </header>
+        <section class="stats-grid">
+            <div class="stat-card primary">
+                <div class="stat-icon">
+                    <span class="material-symbols-outlined">cake</span>
+                </div>
+                <p class="stat-label">Total Products</p>
+                <p class="stat-value">42</p>
+            </div>
+            <div class="stat-card tertiary">
+                <div class="stat-icon">
+                    <span class="material-symbols-outlined">trending_up</span>
+                </div>
+                <p class="stat-label">Active Orders</p>
+                <p class="stat-value">18</p>
+            </div>
+            <div class="stat-card container">
+                <div class="stat-icon">
+                    <span class="material-symbols-outlined">star</span>
+                </div>
+                <p class="stat-label">Top Flavor</p>
+                <p class="stat-value">Pistachio</p>
+            </div>
+        </section>
+        <section class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Category</th>
+                        <th>Price</th>
+                        <th>Stock</th>
+                        <th style="text-align: right;">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="product-info">
+                                <div class="product-img">
+                                    <img alt="Raspberry Velvet"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0ZYVsqZke2OhH0XXWN_PqsADY7Q484xcqih5mK6J75dwEa9TPGW3QJa5WNzHPmAmSzY4KVaEBLeF414DiFQibb2tShf1WXnjk9xqgNKsMjrY55TxcE44Pa2P7C9LrTpmi5zKCB8OL_tQfPrJMr2OUflvh40NXR-vYpu7JIuwEg34JAxobsOp7vrSJ5rGzS3u42d2Lj1W_dEmlnUFek_c7wD9aQxOG6Yr5jVIqgM7VYzBJzFQJ-kaYnys_Fmvzs8cqZ6EXsphDSX91" />
+                                </div>
+                                <div>
+                                    <p class="product-name">Raspberry Velvet</p>
+                                    <p class="product-desc">Double-filled artisanal macaron</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td><span class="badge badge-macarons">Macarons</span></td>
+                        <td class="price-cell">$4.50</td>
+                        <td>
+                            <div class="stock-status">
+                                <div class="dot success"></div>
+                                <span>In Stock</span>
+                            </div>
+                        </td>
+                        <td class="actions-cell">
+                            <button class="btn-action edit"><span class="material-symbols-outlined">edit</span></button>
+                            <button class="btn-action delete"><span
+                                    class="material-symbols-outlined">delete</span></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="product-info">
+                                <div class="product-img">
+                                    <img alt="Dark Truffle Cloud"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCkr-eh-aSknAc7sai2KVLBnd4AWy17t64rbMgpHbjPdqz2mG3EsT4X94C4kJMqisegieKVkzt62Xp8rvMzMALAdxL-87AOAZ1dxL1F1iJusgvuGF39ICNLryjvOnNZRzrNP4lSkiNEfmpKWpJdyZzkd4Qm5zj1JXtVXfzzeqvX6PhD7dOGMidLNo3bSzv6i3XZZFOSciBXE4Dhb9NwxfYW4QcHLpn7KdaeUwAQT-dcxMwnLPyk8Ox2aQ6yfMuLLsTtj8Sx7psiosf" />
+                                </div>
+                                <div>
+                                    <p class="product-name">Dark Truffle Cloud</p>
+                                    <p class="product-desc">70% cacao with edible gold leaf</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td><span class="badge badge-cakes">Cakes</span></td>
+                        <td class="price-cell">$32.00</td>
+                        <td>
+                            <div class="stock-status">
+                                <div class="dot danger"></div>
+                                <span class="stock-danger">Low Stock (2)</span>
+                            </div>
+                        </td>
+                        <td class="actions-cell">
+                            <button class="btn-action edit"><span class="material-symbols-outlined">edit</span></button>
+                            <button class="btn-action delete"><span
+                                    class="material-symbols-outlined">delete</span></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="product-info">
+                                <div class="product-img">
+                                    <img alt="Tahitian Vanilla Eclair"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuACI0qc7Qpebwonf793rs-0DUeLjaCNiPgDFBkh9rNs7TVOtzbbP8OBnqkCFk1FeVB_BsqlSh_ysPrI2JJRiDmfdvgn69hnJs2x6_Z13qtKhG8c1B83vBEPZ4bPVAFlAQ567nmSw1kD5vOkhhmBJyqvnU6l5i0x7RwhtxbiKczM5bqcg1xluHK-vCOBvJQOY7JQDs4oWZWcgFPkHU4w07umDUyb37L_m2av7sb_vPUshJUTIxDBXo7zYkX1rBXbO2DPeUbWhnSbUk49" />
+                                </div>
+                                <div>
+                                    <p class="product-name">Tahitian Vanilla Eclair</p>
+                                    <p class="product-desc">Classic choux with bean-infused cream</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td><span class="badge badge-pastries">Pastries</span></td>
+                        <td class="price-cell">$6.50</td>
+                        <td>
+                            <div class="stock-status">
+                                <div class="dot success"></div>
+                                <span>In Stock</span>
+                            </div>
+                        </td>
+                        <td class="actions-cell">
+                            <button class="btn-action edit"><span class="material-symbols-outlined">edit</span></button>
+                            <button class="btn-action delete"><span
+                                    class="material-symbols-outlined">delete</span></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="pagination">
+                <p class="pagination-info">Showing 3 of 42 products</p>
+                <div class="pagination-controls">
+                    <button class="page-btn"><span class="material-symbols-outlined">chevron_left</span></button>
+                    <button class="page-btn active">1</button>
+                    <button class="page-btn">2</button>
+                    <button class="page-btn"><span class="material-symbols-outlined">chevron_right</span></button>
+                </div>
+            </div>
+        </section>
     </main>
     <!-- Modal Implementation -->
-    <input id="modal-trigger" type="checkbox"/>
+    <input id="modal-trigger" type="checkbox" />
     <div class="modal-overlay">
-    <div class="modal-content">
-    <div class="modal-header">
-    <h3>Add New Indulgence</h3>
-    <label class="close-modal" for="modal-trigger">
-    <span class="material-symbols-outlined">close</span>
-    </label>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Add New Indulgence</h3>
+                <label class="close-modal" for="modal-trigger">
+                    <span class="material-symbols-outlined">close</span>
+                </label>
+            </div>
+            <form class="modal-body">
+                <div class="form-group full-width">
+                    <label class="form-label">Product Name</label>
+                    <input class="form-input" placeholder="e.g. Lavender Honey Cake" type="text" />
+                </div>
+                <div class="form-group full-width">
+                    <label class="form-label">Description</label>
+                    <textarea class="form-textarea" placeholder="Briefly describe the indulgence..."
+                        rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Price ($)</label>
+                    <input class="form-input" placeholder="0.00" step="0.01" type="number" />
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Category</label>
+                    <select class="form-select">
+                        <option>Macarons</option>
+                        <option>Cakes</option>
+                        <option>Pastries</option>
+                        <option>Tarts</option>
+                    </select>
+                </div>
+                <div class="form-group full-width">
+                    <label class="form-label">Image URL</label>
+                    <div class="upload-group">
+                        <input class="form-input" placeholder="https://images.unsplash.com/..." type="url" />
+                        <button class="btn-upload" type="button">Upload</button>
+                    </div>
+                </div>
+                <div class="modal-info-box">
+                    <div class="info-icon">
+                        <span class="material-symbols-outlined">info</span>
+                    </div>
+                    <p>Products will be added to the live catalog immediately. Ensure photography matches our <span
+                            style="color: var(--primary); font-weight: 700;">Luxe Aesthetic</span>.</p>
+                </div>
+            </form>
+            <div class="modal-footer">
+                <label class="btn-discard" for="modal-trigger">Discard</label>
+                <button class="btn-save" type="button">Save Dessert</button>
+            </div>
+        </div>
     </div>
-    <form class="modal-body">
-    <div class="form-group full-width">
-    <label class="form-label">Product Name</label>
-    <input class="form-input" placeholder="e.g. Lavender Honey Cake" type="text"/>
-    </div>
-    <div class="form-group full-width">
-    <label class="form-label">Description</label>
-    <textarea class="form-textarea" placeholder="Briefly describe the indulgence..." rows="3"></textarea>
-    </div>
-    <div class="form-group">
-    <label class="form-label">Price ($)</label>
-    <input class="form-input" placeholder="0.00" step="0.01" type="number"/>
-    </div>
-    <div class="form-group">
-    <label class="form-label">Category</label>
-    <select class="form-select">
-    <option>Macarons</option>
-    <option>Cakes</option>
-    <option>Pastries</option>
-    <option>Tarts</option>
-    </select>
-    </div>
-    <div class="form-group full-width">
-    <label class="form-label">Image URL</label>
-    <div class="upload-group">
-    <input class="form-input" placeholder="https://images.unsplash.com/..." type="url"/>
-    <button class="btn-upload" type="button">Upload</button>
-    </div>
-    </div>
-    <div class="modal-info-box">
-    <div class="info-icon">
-    <span class="material-symbols-outlined">info</span>
-    </div>
-    <p>Products will be added to the live catalog immediately. Ensure photography matches our <span style="color: var(--primary); font-weight: 700;">Luxe Aesthetic</span>.</p>
-    </div>
-    </form>
-    <div class="modal-footer">
-    <label class="btn-discard" for="modal-trigger">Discard</label>
-    <button class="btn-save" type="button">Save Dessert</button>
-    </div>
-    </div>
-    </div>
-    </body>
-    </html>
+</body>
+
+</html>
