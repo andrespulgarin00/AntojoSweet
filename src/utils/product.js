@@ -1,8 +1,4 @@
 import footer from "./components/footer.js";
-<<<<<<< HEAD
-footer()
-=======
 import header from "./components/header.js";
 footer();
 header();
->>>>>>> 33df16e9b938fa6fcc02effe34e2408b73da3491
