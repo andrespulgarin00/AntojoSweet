@@ -1,307 +1,194 @@
 <!DOCTYPE html>
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Antojo Sweet - Pastelería artesanal indulgente</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&amp;family=Be+Vietnam+Pro:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="/frontend/src/views/css/style.css"/>
 
-<html class="scroll-smooth" lang="es">
-
-<head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Antojo Sweet</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&amp;family=Be+Vietnam+Pro:wght@400;600;700&amp;display=swap"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet" />
-    
 </head>
+<body>
+<nav>
+<div class="container nav-content">
+<div class="logo">Antojo Sweet</div>
+<div class="nav-links">
+<a class="active" href="#">Inicio</a>
+<a href="#">Catálogo</a>
+<a href="#">Contacto</a>
+</div>
+<div class="nav-actions">
+<button class="btn-login">Iniciar sesión</button>
+<button class="btn-register">Registrarse</button>
+<div class="mobile-toggle">
+<span class="material-symbols-outlined">menu</span>
+</div>
+</div>
+</div>
+</nav>
+<main>
 
-<body class="font-body-md text-on-background">
-
-    <nav class="fixed top-0 w-full z-50 bg-surface/80 glass-nav shadow-sm h-20">
-        <div
-            class="flex justify-between items-center h-full px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto relative">
-            <div class="font-headline-md text-headline-md font-bold text-primary">Antojo Sweet</div>
-            <div class="hidden md:flex gap-8 items-center">
-                <a class="font-label-md text-label-md text-primary border-b-2 border-primary pb-1" href="#">Inicio</a>
-                <a class="font-label-md text-label-md text-secondary hover:text-primary transition-colors"
-                    href="#">Catálogo</a>
-                <a class="font-label-md text-label-md text-secondary hover:text-primary transition-colors"
-                    href="#">Contacto</a>
-            </div>
-            <div class="flex items-center gap-4">
-                <button
-                    class="hidden md:block font-label-md text-label-md text-primary px-4 py-2 hover:scale-105 transition-transform">Iniciar sesión</button>
-                <button
-                    class="bg-primary text-on-primary font-label-md text-label-md px-6 py-2.5 rounded-full squishy-btn shadow-md">Registrarse</button>
-
-                <label class="md:hidden flex items-center justify-center p-2 cursor-pointer" for="mobile-menu-toggle">
-                    <span class="material-symbols-outlined text-primary">menu</span>
-                </label>
-            </div>
-        </div>
-        <input class="hidden peer" id="mobile-menu-toggle" type="checkbox" />
-        <div class="hidden peer-checked:flex flex-col absolute top-20 left-0 w-full bg-white border-b border-outline-variant/30 md:hidden animate-fade-in shadow-lg"
-            id="mobile-menu">
-            <a class="p-6 font-label-md text-label-md text-primary bg-surface" href="#">Inicio</a>
-            <a class="p-6 font-label-md text-label-md text-secondary border-t border-outline-variant/10"
-                href="#">Catálogo</a>
-            <a class="p-6 font-label-md text-label-md text-secondary border-t border-outline-variant/10"
-                href="#">Contacto</a>
-            <a class="p-6 font-label-md text-label-md text-primary border-t border-outline-variant/10"
-                href="#">Iniciar sesión</a>
-        </div>
-    </nav>
-    <main class="pt-20">
-
-        <section class="relative min-h-[870px] flex items-center overflow-hidden">
-            <div class="absolute inset-0 z-0">
-                <div
-                    class="absolute inset-0 bg-gradient-to-r from-surface-container/90 via-surface/40 to-transparent z-10">
-                </div>
-                <img class="w-full h-full object-cover"
-                    data-alt="A high-end artisanal patisserie presentation featuring a close-up of a decadent multi-layered chocolate cake with glossy ganache and fresh organic strawberries. The lighting is soft and golden, creating an indulgent and sophisticated atmosphere. The background is a clean, minimalist bakery setting in light creamy vanilla and soft pink tones, emphasizing a modern tactile aesthetic."
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdMG3Qi4BoFWD7AFUyg5_rOi37kjIK8kDs-OnuZqFzujBLSJaIZe6HTe3n5WVdMYhJPU2TmThwP1jr9GFUCw-8xBKR3nXq0UtUCDAF9FYl4uopbF9rs-dza2D-8WB9rag26NRlAsDWpw7ZvHH7OWQKDQGqqEvptOxweN3t5KPXqKdP9qoJBSKO2j6gWv4GHPayeR9AyebN0Im_BRcrj-XZPFMY5evN_FH-3Isd_U5F-9LTKySCjWwpC3VqdRxoGlsMQinXK6cYCyig" />
-            </div>
-            <div class="relative z-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full">
-                <div class="max-w-2xl animate-[fade-up_1s_ease-out_forwards]">
-                    <h1 class="font-display-lg text-display-lg text-on-background mb-stack-sm">
-                        Deleite en <br /><span class="text-primary italic">cada capa</span>
-                    </h1>
-                    <p class="font-body-lg text-body-lg text-on-surface-variant mb-stack-lg max-w-lg">
-                        Descubre el arte de los dulces artesanales. Elaborados con ingredientes de primera calidad y
-                        un toque de magia para convertir tus momentos en celebraciones.
-                    </p>
-                    <div class="flex flex-wrap gap-stack-md">
-                        <button
-                            class="bg-primary text-on-primary px-8 py-4 rounded-full font-label-md text-label-md squishy-btn shadow-lg flex items-center gap-2">
+<section class="hero">
+<div class="hero-bg">
+<div class="hero-overlay"></div>
+<img alt="Artisanal patisserie cake" class="hero-image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdMG3Qi4BoFWD7AFUyg5_rOi37kjIK8kDs-OnuZqFzujBLSJaIZe6HTe3n5WVdMYhJPU2TmThwP1jr9GFUCw-8xBKR3nXq0UtUCDAF9FYl4uopbF9rs-dza2D-8WB9rag26NRlAsDWpw7ZvHH7OWQKDQGqqEvptOxweN3t5KPXqKdP9qoJBSKO2j6gWv4GHPayeR9AyebN0Im_BRcrj-XZPFMY5evN_FH-3Isd_U5F-9LTKySCjWwpC3VqdRxoGlsMQinXK6cYCyig"/>
+</div>
+<div class="container">
+<div class="hero-content">
+<h1>Deleite en <br/><span>cada capa</span></h1>
+<p>Descubre el arte de los dulces artesanales. Elaborados con ingredientes de primera calidad y un toque de magia para convertir tus momentos en celebraciones.</p>
+<div class="hero-btns">
+<button class="btn-primary">
                             Explorar catálogo
                             <span class="material-symbols-outlined">arrow_forward</span>
-                        </button>
-                        <button
-                            class="bg-white/40 backdrop-blur-sm border border-outline/20 text-on-background px-8 py-4 rounded-full font-label-md text-label-md squishy-btn hover:bg-white/60 transition-colors">
-                            Nuestra historia
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </section>
+</button>
+<button class="btn-secondary">Nuestra historia</button>
+</div>
+</div>
+</div>
+</section>
 
-        <section class="py-stack-xl px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
-            <div class="reveal-on-scroll flex justify-between items-end mb-stack-lg">
-                <div>
-                    <span class="text-primary font-label-sm text-label-sm uppercase tracking-widest block mb-2">Selección
-                        curada</span>
-                    <h2 class="font-headline-lg text-headline-lg">Los más vendidos de la temporada</h2>
-                </div>
-                <a class="hidden md:flex items-center gap-2 text-primary font-label-md text-label-md group" href="#">
+<section class="section-products container">
+<div class="section-header reveal">
+<div>
+<span class="section-tag">Selección curada</span>
+<h2 class="section-title">Los más vendidos de la temporada</h2>
+</div>
+<a class="view-all" href="#">
                     Ver todos los productos
-                    <span
-                        class="material-symbols-outlined group-hover:translate-x-1 transition-transform">trending_flat</span>
-                </a>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter reveal-on-scroll">
+                    <span class="material-symbols-outlined">trending_flat</span>
+</a>
+</div>
+<div class="products-grid reveal">
 
-                <div
-                    class="bg-white rounded-[32px] p-4 fluffy-shadow group hover:bg-surface-container-low transition-colors duration-500">
-                    <div class="aspect-[4/5] overflow-hidden rounded-[24px] mb-6 relative">
-                        <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                            data-alt="Delicate French macarons in assorted pastel colors like mint green, strawberry pink, and lemon yellow, stacked neatly on a white ceramic plate. The image is captured with a shallow depth of field, highlighting the smooth texture and signature ruffled 'feet' of the macarons. The aesthetic is light, airy, and premium with soft natural light."
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-CaY0TQW4fGkA7nsGG9u1Fgm8lpRSbWU4FwWsnL22-HZKtteQI2Un222SXDO-t5YD_udT5EpTxJppUBYyKdKp37CPVCiiNPmjS_bO7Fzc2xXbAq5cQC2nHd_KlfCpC0ydiQ9VjbSs9zHubUr6FRAUeielPJDjRqpWejrekVb3WZ1ibcTYz1Q0PECDFPWNIncVd65_CgdzdQVERHqlqJroCSwJTFs0UF4XyooJ6hBtqbUogxdzO1gSTMmuDrm9B0KvEeQ6q6iQmJTY" />
-                        <div class="absolute top-4 right-4">
-                            <span
-                                class="bg-primary-container text-on-primary-container px-3 py-1 rounded-full font-label-sm text-label-sm">Más
-                                vendido</span>
-                        </div>
-                    </div>
-                    <div class="px-2 pb-2">
-                        <h3 class="font-headline-md text-headline-md mb-1">Macarons parisinos</h3>
-                        <div class="flex justify-between items-center">
-                            <span class="text-on-surface-variant font-body-md text-body-md italic">Caja de 12
-                                surtidos</span>
-                            <span class="text-primary font-bold text-headline-md">$28.000</span>
-                        </div>
-                    </div>
-                </div>
+<article class="product-card">
+<div class="product-img-wrapper">
+<img alt="Parisian Macarons" class="product-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-CaY0TQW4fGkA7nsGG9u1Fgm8lpRSbWU4FwWsnL22-HZKtteQI2Un222SXDO-t5YD_udT5EpTxJppUBYyKdKp37CPVCiiNPmjS_bO7Fzc2xXbAq5cQC2nHd_KlfCpC0ydiQ9VjbSs9zHubUr6FRAUeielPJDjRqpWejrekVb3WZ1ibcTYz1Q0PECDFPWNIncVd65_CgdzdQVERHqlqJroCSwJTFs0UF4XyooJ6hBtqbUogxdzO1gSTMmuDrm9B0KvEeQ6q6iQmJTY"/>
+<div class="badge badge-best">Más vendido</div>
+</div>
+<div class="product-info">
+<h3>Macarons parisinos</h3>
+<div class="product-meta">
+<span class="product-desc">Caja de 12 surtidos</span>
+<span class="product-price">$28.000</span>
+</div>
+</div>
+</article>
 
-                <div
-                    class="bg-white rounded-[32px] p-4 fluffy-shadow group hover:bg-surface-container-low transition-colors duration-500">
-                    <div class="aspect-[4/5] overflow-hidden rounded-[24px] mb-6 relative">
-                        <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                            data-alt="A luxury strawberry cheesecake topped with fresh glazed berries and white chocolate shavings. The cake is presented on a minimalist wooden stand in a bright, modern kitchen setting. The colors are dominated by vibrant strawberry pinks and creamy white vanillas, evoking a sense of freshness and premium quality."
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9bXeAoruV6Z3s16W3kJwAm3isgagYcxR7r11ImTpu-mxAPrDPFUP-N-5fMukuw2rCJRHv7J5olwomPd2cJHCO8pHxVe7SwPUTkjZYs7CaaG6ikoeE86lYhLX9fp9FneNlq59iDBdxW_IZO-Ch5Tm_BF817CZSHy6jMhAcit0GI2lqdShzHXURECBiKGK7g3wG0HuALVQqa7kgs_gxsWiKzs-UbE8bfFIv9p0IUhCcWIE2VMwKg3fntbUMYcLVKYatQcpHEV7T-AQ8" />
-                    </div>
-                    <div class="px-2 pb-2">
-                        <h3 class="font-headline-md text-headline-md mb-1">Terciopelo de fresa</h3>
-                        <div class="flex justify-between items-center">
-                            <span class="text-primary font-bold text-headline-md">$45.000</span>
-                        </div>
-                    </div>
-                </div>
+<article class="product-card">
+<div class="product-img-wrapper">
+<img alt="Strawberry Velvet Cheesecake" class="product-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9bXeAoruV6Z3s16W3kJwAm3isgagYcxR7r11ImTpu-mxAPrDPFUP-N-5fMukuw2rCJRHv7J5olwomPd2cJHCO8pHxVe7SwPUTkjZYs7CaaG6ikoeE86lYhLX9fp9FneNlq59iDBdxW_IZO-Ch5Tm_BF817CZSHy6jMhAcit0GI2lqdShzHXURECBiKGK7g3wG0HuALVQqa7kgs_gxsWiKzs-UbE8bfFIv9p0IUhCcWIE2VMwKg3fntbUMYcLVKYatQcpHEV7T-AQ8"/>
+</div>
+<div class="product-info">
+<h3>Terciopelo de fresa</h3>
+<div class="product-meta">
+<span class="product-desc">Cheesecake con frutas</span>
+<span class="product-price">$45.000</span>
+</div>
+</div>
+</article>
 
-                <div
-                    class="bg-white rounded-[32px] p-4 fluffy-shadow group hover:bg-surface-container-low transition-colors duration-500">
-                    <div class="aspect-[4/5] overflow-hidden rounded-[24px] mb-6 relative">
-                        <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                            data-alt="Artisanal dark chocolate truffles coated in gold dust and crushed pistachios, displayed on a slate platter. The mood is moody yet inviting, with soft side-lighting that catches the golden highlights. The background features warm earthy tones and a hint of soft pink, maintaining the Antojo Sweet brand identity of sophisticated indulgence."
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzaN5EcqsSlTLyiEeyvHo6Z4jBHxpNPYzZ4qYecN8D8J3UievuihovScPye4E9RXt06LKNjM9r25hiZlbRQsPlMMe4vOOPeHKOM4vrhpn9RxcH6TF5I_rZ-KdoEB3uUaeXv4-MtiELtvexZp7gCx9brw1z8nznTX3TlKKB9eZGUoE15tlEwcR7gX7ioqWikTypYnWokLBGR24Sz1nY8Vbl8cpjUyilQvG0RthHsT6LJRb-2YmRi2QWUvtrGVc9H14P001Dow-6NlfS" />
-                        <div class="absolute top-4 right-4">
-                            <span
-                                class="bg-tertiary-container text-on-tertiary-container px-3 py-1 rounded-full font-label-sm text-label-sm">Vegano</span>
-                        </div>
-                    </div>
-                    <div class="px-2 pb-2">
-                        <h3 class="font-headline-md text-headline-md mb-1">Trufas doradas</h3>
-                        <div class="flex justify-between items-center">
-                            <span class="text-on-surface-variant font-body-md text-body-md italic">Pistacho oscuro con
-                                oro 24k</span>
-                            <span class="text-primary font-bold text-headline-md">$32.000</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+<article class="product-card">
+<div class="product-img-wrapper">
+<img alt="Gilded Truffles" class="product-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzaN5EcqsSlTLyiEeyvHo6Z4jBHxpNPYzZ4qYecN8D8J3UievuihovScPye4E9RXt06LKNjM9r25hiZlbRQsPlMMe4vOOPeHKOM4vrhpn9RxcH6TF5I_rZ-KdoEB3uUaeXv4-MtiELtvexZp7gCx9brw1z8nznTX3TlKKB9eZGUoE15tlEwcR7gX7ioqWikTypYnWokLBGR24Sz1nY8Vbl8cpjUyilQvG0RthHsT6LJRb-2YmRi2QWUvtrGVc9H14P001Dow-6NlfS"/>
+<div class="badge badge-vegan">Vegano</div>
+</div>
+<div class="product-info">
+<h3>Trufas doradas</h3>
+<div class="product-meta">
+<span class="product-desc">Pistacho oscuro con oro 24k</span>
+<span class="product-price">$32.000</span>
+</div>
+</div>
+</article>
+</div>
+</section>
 
-        <section class="bg-surface-container py-stack-xl relative overflow-hidden">
+<section class="section-values">
+<div class="blob blob-1"></div>
+<div class="blob blob-2"></div>
+<div class="container values-content reveal">
+<div class="values-intro">
+<h2>Elaborados con pura alegría</h2>
+<p>Creemos que un postre es más que comida; es una experiencia sensorial diseñada para deleitar el alma.</p>
+</div>
+<div class="values-grid">
+<div class="value-card">
+<div class="value-icon value-icon-1">
+<span class="material-symbols-outlined">workspace_premium</span>
+</div>
+<h4>Calidad premium</h4>
+<p>Solo utilizamos los mejores ingredientes orgánicos, desde vainilla de Madagascar hasta cacao belga.</p>
+</div>
+<div class="value-card">
+<div class="value-icon value-icon-2">
+<span class="material-symbols-outlined">auto_awesome</span>
+</div>
+<h4>Toque artesanal</h4>
+<p>Cada dulce es decorado a mano por nuestros maestros pasteleros con meticulosa atención al detalle.</p>
+</div>
+<div class="value-card">
+<div class="value-icon value-icon-3">
+<span class="material-symbols-outlined">eco</span>
+</div>
+<h4>Azúcar consciente</h4>
+<p>Dulzura sofisticada equilibrada perfectamente, sin opacar los sabores naturales de nuestras delicias.</p>
+</div>
+</div>
+</div>
+</section>
 
-            <div
-                class="absolute top-0 right-0 w-64 h-64 bg-primary-fixed/20 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2">
-            </div>
-            <div
-                class="absolute bottom-0 left-0 w-96 h-96 bg-tertiary-fixed/10 rounded-full blur-[120px] translate-y-1/2 -translate-x-1/2">
-            </div>
-            <div
-                class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto relative z-10 reveal-on-scroll">
-                <div class="text-center max-w-3xl mx-auto mb-stack-lg">
-                    <h2 class="font-headline-lg text-headline-lg mb-4">Elaborados con pura alegría</h2>
-                    <p class="font-body-lg text-body-lg text-on-surface-variant">Creemos que un postre es más que
-                        comida; es una experiencia sensorial diseñada para deleitar el alma.</p>
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
-
-                    <div
-                        class="text-center p-8 bg-white/50 backdrop-blur-md rounded-[40px] border border-white/50 fluffy-shadow">
-                        <div
-                            class="w-16 h-16 bg-primary-fixed rounded-3xl flex items-center justify-center mx-auto mb-6">
-                            <span class="material-symbols-outlined text-primary scale-125">workspace_premium</span>
-                        </div>
-                        <h4 class="font-headline-md text-headline-md mb-3">Calidad premium</h4>
-                        <p class="font-body-md text-on-surface-variant">Solo utilizamos los mejores ingredientes orgánicos,
-                            desde vainilla de Madagascar hasta cacao belga.</p>
-                    </div>
-
-                    <div
-                        class="text-center p-8 bg-white/50 backdrop-blur-md rounded-[40px] border border-white/50 fluffy-shadow">
-                        <div
-                            class="w-16 h-16 bg-surface-container-high rounded-3xl flex items-center justify-center mx-auto mb-6">
-                            <span class="material-symbols-outlined text-primary scale-125">auto_awesome</span>
-                        </div>
-                        <h4 class="font-headline-md text-headline-md mb-3">Toque artesanal</h4>
-                        <p class="font-body-md text-on-surface-variant">Cada dulce es decorado a mano por nuestros maestros
-                            pasteleros con meticulosa atención al detalle.</p>
-                    </div>
-
-                    <div
-                        class="text-center p-8 bg-white/50 backdrop-blur-md rounded-[40px] border border-white/50 fluffy-shadow">
-                        <div
-                            class="w-16 h-16 bg-tertiary-fixed rounded-3xl flex items-center justify-center mx-auto mb-6">
-                            <span class="material-symbols-outlined text-tertiary scale-125">eco</span>
-                        </div>
-                        <h4 class="font-headline-md text-headline-md mb-3">Azúcar consciente</h4>
-                        <p class="font-body-md text-on-surface-variant">Dulzura sofisticada equilibrada perfectamente,
-                            sin opacar los sabores naturales de nuestras delicias.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="py-stack-xl px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
-            <div class="reveal-on-scroll bg-primary rounded-[48px] overflow-hidden relative">
-                <div
-                    class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-primary-container/40 to-transparent">
-                </div>
-                <div class="relative z-10 px-8 md:px-20 py-16 text-center text-on-primary">
-                    <h2 class="font-display-lg text-headline-lg md:text-display-lg mb-6">Únete a nuestro círculo dulce</h2>
-                    <p class="font-body-lg text-body-lg mb-stack-lg max-w-xl mx-auto opacity-90">Recibe acceso anticipado a nuestras
-                        colecciones de temporada y recetas exclusivas de postres en tu correo.</p>
-                    <form action="#" class="flex flex-col md:flex-row gap-4 max-w-lg mx-auto" method="POST">
-                        <input
-                            class="flex-1 bg-white/10 border border-white/20 rounded-full px-6 py-4 text-white placeholder:text-white/60 focus:ring-2 focus:ring-white/40 focus:bg-white/20 outline-none transition-all"
-                            placeholder="Ingresa tu correo" required="" type="email" />
-                        <button
-                            class="bg-white text-primary px-8 py-4 rounded-full font-label-md text-label-md squishy-btn font-bold"
-                            type="submit">Suscribirse</button>
-                    </form>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="w-full mt-stack-xl bg-surface-container-low">
-        <div
-            class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-stack-xl max-w-container-max mx-auto">
-            <div class="col-span-1 md:col-span-1">
-                <div class="font-headline-md text-headline-md text-primary mb-6">Antojo Sweet</div>
-                <p class="font-body-md text-body-md text-secondary mb-6">Elevando el arte de la pastelería para un mundo
-                    moderno, bocado a bocado.</p>
-                <div class="flex gap-4">
-                    <a class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center hover:bg-primary-container hover:text-on-primary-container transition-all group"
-                        href="#">
-                        <span class="material-symbols-outlined text-[20px]">share</span>
-                    </a>
-                    <a class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center hover:bg-primary-container hover:text-on-primary-container transition-all group"
-                        href="#">
-                        <span class="material-symbols-outlined text-[20px]">public</span>
-                    </a>
-                </div>
-            </div>
-            <div>
-                    <h5 class="font-label-md text-label-md text-primary mb-6 uppercase tracking-wider">Empresa</h5>
-                <ul class="space-y-4">
-                        <li><a class="text-secondary hover:text-primary transition-colors font-body-md" href="#">Sobre
-                            nosotros</a></li>
-                        <li><a class="text-secondary hover:text-primary transition-colors font-body-md" href="#">Empleo</a>
-                        </li>
-                        <li><a class="text-secondary hover:text-primary transition-colors font-body-md" href="#">Contacto</a>
-                        </li>
-                </ul>
-            </div>
-            <div>
-                <h5 class="font-label-md text-label-md text-primary mb-6 uppercase tracking-wider">Política</h5>
-                <ul class="space-y-4">
-                        <li><a class="text-secondary hover:text-primary transition-colors font-body-md" href="#">Política
-                            de envíos</a></li>
-                        <li><a class="text-secondary hover:text-primary transition-colors font-body-md" href="#">Política
-                            de privacidad</a></li>
-                        <li><a class="text-secondary hover:text-primary transition-colors font-body-md" href="#">Términos de
-                            servicio</a></li>
-                </ul>
-            </div>
-            <div>
-                <h5 class="font-label-md text-label-md text-primary mb-6 uppercase tracking-wider">Soporte</h5>
-                <ul class="space-y-4">
-                        <li><a class="text-secondary hover:text-primary transition-colors font-body-md" href="#">Preguntas
-                            frecuentes</a>
-                        </li>
-                        <li><a class="text-secondary hover:text-primary transition-colors font-body-md" href="#">Rastrear
-                            pedido</a></li>
-                        <li><a class="text-secondary hover:text-primary transition-colors font-body-md"
-                            href="#">Venta al por mayor</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="border-t border-outline-variant/30 py-8 text-center">
-            <p class="font-label-sm text-label-sm text-secondary">© 2024 Antojo Sweet. Elaborado con amor.</p>
-        </div>
-
-
-
-    <script src="/frontend/src/models/app.js"></script>
-
-
-
-    </footer>
-</body>
-
-</html>
+<section class="cta-section container reveal">
+<div class="cta-banner">
+<div class="cta-gradient"></div>
+<div class="cta-content">
+<h2>Únete a nuestro círculo dulce</h2>
+<p>Recibe acceso anticipado a nuestras colecciones de temporada y recetas exclusivas de postres en tu correo.</p>
+<form class="cta-form" onsubmit="return false;">
+<input class="cta-input" placeholder="Ingresa tu correo" required="" type="email"/>
+<button class="btn-cta" type="submit">Suscribirse</button>
+</form>
+</div>
+</div>
+</section>
+</main>
+<footer>
+<div class="container footer-grid">
+<div class="footer-brand">
+<div class="logo">Antojo Sweet</div>
+<p>Elevando el arte de la pastelería para un mundo moderno, bocado a bocado.</p>
+<div class="social-links">
+<a class="social-btn" href="#"><span class="material-symbols-outlined">share</span></a>
+<a class="social-btn" href="#"><span class="material-symbols-outlined">public</span></a>
+</div>
+</div>
+<div class="footer-col">
+<h5>Empresa</h5>
+<ul class="footer-links">
+<li><a href="#">Sobre nosotros</a></li>
+<li><a href="#">Empleo</a></li>
+<li><a href="#">Contacto</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h5>Política</h5>
+<ul class="footer-links">
+<li><a href="#">Política de envíos</a></li>
+<li><a href="#">Política de privacidad</a></li>
+<li><a href="#">Términos de servicio</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h5>Soporte</h5>
+<ul class="footer-links">
+<li><a href="#">Preguntas frecuentes</a></li>
+<li><a href="#">Rastrear pedido</a></li>
+<li><a href="#">Venta al por mayor</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom">
+<p>© 2024 Antojo Sweet. Elaborado con amor.</p>
+</div>
+</footer>
+</body></html>
