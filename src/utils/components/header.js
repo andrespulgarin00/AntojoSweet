@@ -138,9 +138,9 @@ document.getElementById("header").innerHTML = `
         <div class="container nav-content">
             <a class="logo" href="#">Antojo Sweet</a>
             <div class="nav-links">
-                <a href="/frontend/index.html">Inicio</a>
-                <a href="/frontend/src/views/pages/product.html">Catálogo</a>
-                <a href="/frontend/src/views/pages/contact.html">Contacto</a>
+                <a href="/index.html">Inicio</a>
+                <a href="/src/views/pages/product.html">Catálogo</a>
+                <a href="/src/views/pages/contact.html">Contacto</a>
             </div>
             <div class="nav-actions">
                 <button class="btn-text">Iniciar Sesión</button>
