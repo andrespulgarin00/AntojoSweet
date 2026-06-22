@@ -309,7 +309,6 @@
             color: var(--on-primary);
         }
 
-        /* Pagination */
         .pagination {
             margin-top: 80px;
             display: flex;
