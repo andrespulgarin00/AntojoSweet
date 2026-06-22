@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Supabase HTML</title>
+</head>
+
+<body>
+
+
+<h1>Usuarios</h1>
+
+
+<input id="nombre">
+<input id="correo">
+
+<button onclick="guardar()">
+Guardar
+</button>
+
+
+<button onclick="mostrarUsuarios()">
+    Ver usuarios
+</button>
+
+
+<div id="lista"></div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script src="/src/models/user_models.js"></script>
+
+
+</body>
+
+</html>
