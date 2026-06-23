@@ -134,7 +134,9 @@ document.getElementById("header").innerHTML = `
             align-items: center;
         }
 </style>
+
 <nav>
+
         <div class="container nav-content">
             <a class="logo" href="#">Antojo Sweet</a>
             <div class="nav-links">
