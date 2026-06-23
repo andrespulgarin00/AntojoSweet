@@ -1,4 +1,4 @@
-import { getProductos } from "../models/products_models.js";
+ import { getProductos } from "../models/products_models.js";
 
 export async function cargarProductos() {
     const productos = await getProductos();

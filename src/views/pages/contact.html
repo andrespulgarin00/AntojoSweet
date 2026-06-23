@@ -114,24 +114,24 @@
                        
                     </div>
                     <div class="form-card">
-                        <form action="#">
+                        <form id="form">
                             <div class="form-grid">
                                 <div class="form-group">
-                                    <label>Pimer nombre</label>
-                                    <input placeholder="Jane" required="" type="text" />
+                                    <label>nombres</label>
+                                    <input placeholder="Jane" required="" id="nombre" type="text" />
                                 </div>
                                 <div class="form-group">
-                                    <label>Aperridi</label>
-                                    <input placeholder="Doe" required="" type="text" />
+                                    <label>Apellidos</label>
+                                    <input placeholder="Doe" required="" id="apellido" type="text" />
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label>Correo electronico</label>
-                                <input placeholder="jane@example.com" required="" type="email" />
+                                <input placeholder="jane@example.com" required="" id="correo" type="email" />
                             </div>
                             <div class="form-group">
-                                <label>Asunto</label>
-                                <select required="">
+                                <label >Asunto</label>
+                                <select required="" id="asunto">
                                     <option>Consulta de pastel a medida</option>
                                     <option>Catering Corporativo</option>
                                     <option>Comentarios generales</option>
@@ -139,8 +139,8 @@
                                 </select>
                             </div>
                             <div class="form-group">
-                                <label>Tu mensage</label>
-                                <textarea placeholder="How can we make your day sweeter?" required=""
+                                <label >Tu mensage</label>
+                                <textarea id="mensaje" placeholder="How can we make your day sweeter?" required=""
                                     rows="4"></textarea>
                             </div>
                             <button class="btn-submit" type="submit">Enviar mensage</button>
@@ -162,6 +162,7 @@
     </main>
     <div id="footer"></div>
     <script type="module" src="../../utils/contact.js"></script>
+    <script type="module" src="../../controllers/contact_contollers.js"></script>
    
 </body>
 
