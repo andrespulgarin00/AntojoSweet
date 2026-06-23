@@ -47,6 +47,8 @@ header{
     cursor: pointer;
     padding: 12px 25px;
     border-radius: 25px;
+    text-decoration: none;
+    text-decoration-line: none;
 }
 
 .btn-login{
@@ -119,16 +121,16 @@ header{
     margin-bottom: 30px;
 }
 
-.tabs button{
+.tab-btn{
     width: 50%;
     padding: 12px;
-    border: none;
-    background: transparent;
+    text-align: center;
+    text-decoration: none;
+    color: #2b1613;
     border-radius: 25px;
-    cursor: pointer;
 }
 
-.tabs .activo{
+.tab-btn.activo{
     background: #ffffff;
     font-weight: bold;
 }
