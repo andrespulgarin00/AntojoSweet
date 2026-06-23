@@ -1,7 +1,11 @@
+export default function header (){
 document.getElementById("header").innerHTML = `
 <style>
+<<<<<<< HEAD:frontend/src/utils/components/header.js
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 4de7094ee9d378db66b687d7a1b2ff0fcd1eaede:src/utils/components/header.js
 .btn-text {
             background: none;
             border: none;
@@ -26,7 +30,10 @@ document.getElementById("header").innerHTML = `
         .btn-primary:hover {
             transform: scale(1.05);
         }
+<<<<<<< HEAD:frontend/src/utils/components/header.js
 >>>>>>> 049e608d5ad2030e16d72775e4bd3ab5e1f7e2d3
+=======
+>>>>>>> 4de7094ee9d378db66b687d7a1b2ff0fcd1eaede:src/utils/components/header.js
 :root {
             /* Colors from Design System */
             --primary: #b0004a;
@@ -140,15 +147,15 @@ document.getElementById("header").innerHTML = `
         <div class="container nav-content">
             <a class="logo" href="#">Antojo Sweet</a>
             <div class="nav-links">
-                <a href="#">Home</a>
-                <a href="#">Catalog</a>
-                <a class="active" href="#">Contact</a>
+                <a href="/index.html">Inicio</a>
+                <a href="/src/views/pages/product.html">Catálogo</a>
+                <a href="/src/views/pages/contact.html">Contacto</a>
             </div>
             <div class="nav-actions">
-                <button class="btn-text">Login</button>
-                <button class="btn-primary">Register</button>
+                <button class="btn-text">Iniciar Sesión</button>
+                <button class="btn-primary">Registrarse</button>
             </div>
         </div>
     </nav>
 
-`
+`}

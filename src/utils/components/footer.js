@@ -1,6 +1,8 @@
-
-document.getElementById("footer").innerHTML = `
-<style>
+export default function footer() {
+    const footerElemet = document.getElementById("footer")
+    if (!footerElemet)return;
+    footerElemet.innerHTML = `
+    <style>
     :root {
             /* Colors from Design System */
             --primary: #b0004a;
@@ -40,8 +42,11 @@ document.getElementById("footer").innerHTML = `
             /* Transitions */
             --transition: 0.2s ease-in-out;
         }
+<<<<<<< HEAD:frontend/src/utils/components/footer.js
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 4de7094ee9d378db66b687d7a1b2ff0fcd1eaede:src/utils/components/footer.js
          footer {
             background-color: var(--surface-container-low);
             padding-top: var(--stack-xl);
@@ -99,7 +104,10 @@ document.getElementById("footer").innerHTML = `
             color: var(--secondary);
         }
 
+<<<<<<< HEAD:frontend/src/utils/components/footer.js
 >>>>>>> 049e608d5ad2030e16d72775e4bd3ab5e1f7e2d3
+=======
+>>>>>>> 4de7094ee9d378db66b687d7a1b2ff0fcd1eaede:src/utils/components/footer.js
 
 </style>
 <footer>
@@ -144,3 +152,5 @@ document.getElementById("footer").innerHTML = `
         </div>
     </footer>
 `
+console.log("da")
+}

@@ -57,7 +57,10 @@
         }
 
         
+<<<<<<< HEAD:frontend/src/views/css/contact.css
 <<<<<<< HEAD
+=======
+>>>>>>> 4de7094ee9d378db66b687d7a1b2ff0fcd1eaede:src/views/css/contact.css
         .btn-text {
             background: none;
             border: none;
@@ -82,9 +85,13 @@
         .btn-primary:hover {
             transform: scale(1.05);
         }
+<<<<<<< HEAD:frontend/src/views/css/contact.css
 =======
         
 >>>>>>> 049e608d5ad2030e16d72775e4bd3ab5e1f7e2d3
+=======
+        
+>>>>>>> 4de7094ee9d378db66b687d7a1b2ff0fcd1eaede:src/views/css/contact.css
 
         /* Hero Section */
         .hero {
@@ -389,7 +396,10 @@
         }
 
         /* Footer */
+<<<<<<< HEAD:frontend/src/views/css/contact.css
 <<<<<<< HEAD
+=======
+>>>>>>> 4de7094ee9d378db66b687d7a1b2ff0fcd1eaede:src/views/css/contact.css
         footer {
             background-color: var(--surface-container-low);
             padding-top: var(--stack-xl);
@@ -447,9 +457,13 @@
             color: var(--secondary);
         }
 
+<<<<<<< HEAD:frontend/src/views/css/contact.css
 =======
        
 >>>>>>> 049e608d5ad2030e16d72775e4bd3ab5e1f7e2d3
+=======
+       
+>>>>>>> 4de7094ee9d378db66b687d7a1b2ff0fcd1eaede:src/views/css/contact.css
         /* Utils */
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
