@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro - AntojoSweet</title>
+    <link rel="stylesheet" href="../css/register_login.css" />
+  </head>
+  <body>
+    <header>
+      <a href="/index.html" class="btn-salir"> ← Salir </a>
+    </header>
+
+    <main class="contenedor">
+      <section class="informacion">
+        <h1>
+          Dulce sabor<br />
+          <span>Reimaginado.</span>
+        </h1>
+
+        <p>
+          Únete a nuestra comunidad y descubre los mejores postres, promociones
+          exclusivas y experiencias inolvidables.
+        </p>
+      </section>
+
+      <section class="formulario">
+        
+        <div class="tabs">
+          <a href="login.html" class="tab-btn">Inicia</a>
+          <a href="register.html" class="tab-btn activo">Registrate</a>
+        </div>
+
+        <h2>Crea tu cuenta</h2>
+        <p>Únete a nuestra dulce comunidad.</p>
+
+        <form id="registro">
+          <div class="campo">
+            <label>Nombre completo</label>
+            <input type="text" placeholder="Nombre" id="nombre"/>
+          </div>
+
+           <div class="campo">
+            <label>Numero De Telefono</label>
+            <input type="text" placeholder="telefono" id="telefono"/>
+          </div>
+
+          <div class="campo">
+            <label>Correo electrónico</label>
+            <input type="email" placeholder="correo" id="correo"/>
+          </div>
+
+          <div class="campo">
+            <label>Contraseña</label>
+            <input type="password" placeholder="********" id="contrasena"/>
+          </div>
+
+          <div class="campo">
+            <label>Confirmar contraseña</label>
+            <input type="password" placeholder="********" id="confirmar" />
+          </div>
+
+          <input class="btn-formulario" type="submit" value="Crear Cuenta" />
+        </form>
+      </section>
+    </main>
+  </body>
+  <script type="module" src="/src/controllers/user_controllers.js"></script>
+</html>

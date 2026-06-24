@@ -143,5 +143,5 @@ export default function footer() {
         </div>
     </footer>
 `
-console.log("da")
+
 }
