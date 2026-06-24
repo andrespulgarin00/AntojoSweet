@@ -1,6 +1,6 @@
 import { supabase } from "../config/supabase.js";
 
-export async function getProductos() {
+export async function verProductos() {
     const { data, error } = await supabase
         .from("postres")
         .select("*");

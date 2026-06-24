@@ -9,10 +9,42 @@ body{
     background-color: #fff8f6;
 }
 
-header{
-    border-bottom: 1px solid #e3bdc3;
-    padding: 20px 80px;
-}
+  header {
+    padding: 15px 20px;
+    background-color: #ffffff; /* Fondo blanco para el header */
+    border-bottom: 1px solid #e0e0e0; /* Línea sutil de separación */
+    display: flex;
+    align-items: center;
+  }
+
+  .btn-salir {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff; 
+    text-decoration: none; 
+    border: 1px solid #cbd5e1; 
+    border-radius: 6px;
+    background-color: #d81b60;
+    transition: all 0.2s ease-in-out; 
+    cursor: pointer;
+  }
+
+ 
+  .btn-salir:hover {
+    color: #e53e3e;
+    background-color: #fff5f5;
+    border-color: #feb2b2;
+    transform: translateX(-2px);
+  }
+
+  .btn-salir:active {
+    transform: scale(0.98);
+  }
 
 .navbar{
     display: flex;

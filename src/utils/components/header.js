@@ -145,10 +145,19 @@ document.getElementById("header").innerHTML = `
                 <a href="/src/views/pages/contact.html">Contacto</a>
             </div>
             <div class="nav-actions">
-                <button class="btn-text">Iniciar Sesión</button>
-                <button class="btn-primary">Registrarse</button>
+                <button id="btn_login" class="btn-text">Iniciar Sesión</button>
+                <button id = "btn_registro" class="btn-primary">Registrarse</button>
             </div>
         </div>
     </nav>
 
-`}
+`
+const BTN_INICIOSESION = document.getElementById("btn_login")
+BTN_INICIOSESION.addEventListener(("click"),()=>{
+    window.location.href="/src/views/pages/login.html"
+})
+const BTN_REGISTRARSE = document.getElementById("btn_registro")
+BTN_REGISTRARSE.addEventListener(("click"),()=>{
+    window.location.href="/src/views/pages/register.html"
+})
+}

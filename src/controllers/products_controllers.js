@@ -1,7 +1,7 @@
- import { getProductos } from "../models/products_models.js";
+ import { verProductos } from "../models/products_models.js";
 
 export async function cargarProductos() {
-    const productos = await getProductos();
+    const productos = await verProductos();
 
     const contenedor = document.getElementById("productos");
 
