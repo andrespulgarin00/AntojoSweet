@@ -1,6 +1,6 @@
 import { enviarContacto } from "../models/contact_models.js";
 
-export function initContactForm() {
+function initContactForm() {
     const form = document.getElementById("form");
 
     form.addEventListener("submit", async (e) => {
