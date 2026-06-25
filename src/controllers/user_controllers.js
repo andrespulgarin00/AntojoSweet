@@ -58,7 +58,7 @@ export async function ingresar(){
             return
         }
         
-
+        localStorage.setItem("usuario_nombre", BUSCAR_USUARIOS.nombre);
         localStorage.setItem("isLoggedIn", "true");
         window.location.href="/src/views/pages/dashborad.html"
       

@@ -25,7 +25,7 @@ let timerInterval;
 return Swal.fire({
   title: "Auto close alert!",
   html: "I will close in <b></b> milliseconds.",
-  timer: 2000,
+  timer: 200,
   timerProgressBar: true,
   didOpen: () => {
     Swal.showLoading();

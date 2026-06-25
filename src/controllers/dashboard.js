@@ -1,6 +1,6 @@
-import { ingresar } from "./user_controllers.js";
+
 import { cerrar } from "../utils/alerts.js";
-import { verUsuarios } from "../models/user_models.js";
+
 
 
 async function verificarSeguridad(){
@@ -18,25 +18,26 @@ function cerrarSesioon(){
  SALIR.addEventListener(("click"),(e)=>{
     e.preventDefault()
     localStorage.removeItem("isLoggedIn")
+    localStorage.removeItem("usuario_nombre");
     window.location.href="/index.html"
  })
 
 }
-
-async function nombres () {
-    const USUARIO = await verUsuarios()
-    let nombre = document.getElementById("name")
-   
-
-    nombre.innerHTML= USUARIO.map(na =>
-        `<p>${na.nombre}</p>    
-        `
-        
-
-)
+function mostrarNombreUsuario() {
+    const contenedorNombre = document.getElementById("name");
     
+    if (!contenedorNombre) return;
+
+
+    const nombreUsuario = localStorage.getItem("usuario_nombre");
+
+    if (nombreUsuario) {
+        contenedorNombre.innerHTML = `<p>${nombreUsuario}</p>`;
+    } else {
+        contenedorNombre.innerHTML = `<p>Usuario</p>`;
+    }
 }
 
 verificarSeguridad()
 cerrarSesioon()
-nombres()
+mostrarNombreUsuario()
