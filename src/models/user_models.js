@@ -11,8 +11,9 @@ export async function crearUsuarios(datos){
         console.log(error);
         return null;
     }
-
+   
     return data;
+    
     
 }
 

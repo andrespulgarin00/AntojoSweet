@@ -38,20 +38,21 @@
         <h2>Iniciar sesión</h2>
         <p>Ingresa tus datos para continuar.</p>
 
-        <form>
+        <form id="iniciar">
           <div class="campo">
             <label>Correo electrónico</label>
-            <input type="email" placeholder="correo@email.com" />
+            <input id="correo" type="email" placeholder="correo@email.com" />
           </div>
 
           <div class="campo">
             <label>Contraseña</label>
-            <input type="password" placeholder="********" />
+            <input id="password" type="password" placeholder="********" />
           </div>
 
-          <input class="btn-formulario" type="submit" value="Iniciar Sesión" />
+          <input class="btn-formulario" type="submit" value="Iniciar Sesión"  />
         </form>
       </section>
     </main>
+    <script type="module" src="/src/controllers/user_controllers.js"></script>
   </body>
 </html>
