@@ -54,6 +54,11 @@
             display: flex;
         }
 
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
         h1, h2, h3 {
             font-family: 'Playfair Display', serif;
         }
@@ -328,7 +333,9 @@
             border-radius: var(--radius-3xl);
             border: 1px solid var(--outline-variant);
             overflow: hidden;
+            overflow-x: auto;
             box-shadow: 0 10px 30px -5px rgba(176, 0, 74, 0.1);
+            width: 100%;
         }
 
         table {
@@ -700,4 +707,127 @@
         .btn-save:hover {
             transform: scale(1.05);
             box-shadow: 0 15px 30px rgba(176, 0, 74, 0.3);
+        }
+
+        @media (max-width: 1200px) {
+            body {
+                flex-direction: column;
+            }
+
+            aside {
+                position: relative;
+                width: 100%;
+                height: auto;
+                min-height: auto;
+            }
+
+            nav {
+                flex-direction: row;
+                flex-wrap: wrap;
+                padding: 0 16px;
+            }
+
+            .nav-link {
+                margin: 0 8px 8px;
+            }
+
+            .sidebar-footer {
+                padding: 0 16px;
+            }
+
+            main {
+                margin-left: 0;
+                padding: 32px 20px;
+            }
+
+            header {
+                align-items: flex-start;
+                gap: 24px;
+                flex-direction: column;
+            }
+
+            .header-actions {
+                width: 100%;
+                flex-wrap: wrap;
+            }
+
+            .search-container input {
+                width: min(100%, 320px);
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .modal-body {
+                padding: 32px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            main {
+                padding: 20px 16px;
+            }
+
+            header h2 {
+                font-size: 36px;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .search-container,
+            .search-container input,
+            .btn-filter {
+                width: 100%;
+            }
+
+            .search-container input {
+                width: 100%;
+            }
+
+            .table-container {
+                border-radius: 24px;
+            }
+
+            table {
+                min-width: 720px;
+            }
+
+            .pagination {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 16px;
+            }
+
+            .pagination-controls {
+                width: 100%;
+                justify-content: flex-start;
+                flex-wrap: wrap;
+            }
+
+            .modal-body {
+                grid-template-columns: 1fr;
+                padding: 24px 20px;
+            }
+
+            .full-width,
+            .modal-info-box {
+                grid-column: span 1;
+            }
+
+            .upload-group {
+                flex-direction: column;
+            }
+
+            .modal-footer {
+                flex-direction: column-reverse;
+            }
+
+            .btn-discard,
+            .btn-save {
+                width: 100%;
+                text-align: center;
+            }
         }
