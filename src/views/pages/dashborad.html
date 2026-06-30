@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Antojo Sweet - Admin Dashboard</title>
+    <title>Antojo Sweet - Panel de administración</title>
     <link rel="stylesheet" href="../css/dashboard.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&amp;family=Be+Vietnam+Pro:wght@400;600;700&amp;display=swap"
@@ -19,7 +19,7 @@
     <aside>
         <div class="brand-area">
             <h1>Antojo Sweet</h1>
-            <p>ARTISANAL PATISSERIE</p>
+                <p>PASTELERÍA ARTESANAL</p>
         </div>
         <div class="admin-profile">
             <img alt="Admin"
@@ -32,46 +32,46 @@
         <nav>
             <a class="nav-link" href="#">
                 <span class="material-symbols-outlined">dashboard</span>
-                Dashboard
+                Panel
             </a>
             <a class="nav-link active" href="#">
                 <span class="material-symbols-outlined">bakery_dining</span>
-                Products
+                Productos
             </a>
             <a class="nav-link" href="#">
                 <span class="material-symbols-outlined">shopping_bag</span>
-                Orders
+                Pedidos
             </a>
             <a class="nav-link" href="#">
                 <span class="material-symbols-outlined">settings</span>
-                Settings
+                Ajustes
             </a>
         </nav>
         <div class="sidebar-footer">
             <label class="btn-add-new" for="modal-trigger">
                 <span class="material-symbols-outlined">add_circle</span>
-                Add New Dessert
+                Agregar postre
             </label>
             <a class="nav-link logout-link" href="#" id="salir" >
                 <span class="material-symbols-outlined" >logout</span>
-                Logout
+                Cerrar sesión
             </a>
         </div>
     </aside>
     <main>
         <header>
             <div>
-                <h2>Product Management</h2>
-                <p>Update, track, and curate your indulgent dessert catalog.</p>
+                <h2>Gestión de productos</h2>
+                <p>Actualiza, controla y organiza tu catálogo de postres.</p>
             </div>
             <div class="header-actions">
                 <div class="search-container">
                     <span class="material-symbols-outlined">search</span>
-                    <input placeholder="Search desserts..." type="text" />
+                    <input id="dashboard-search" placeholder="Buscar postres..." type="text" />
                 </div>
                 <button class="btn-filter">
                     <span class="material-symbols-outlined">filter_list</span>
-                    Filter
+                    Filtrar
                 </button>
             </div>
         </header>
@@ -80,36 +80,36 @@
                 <div class="stat-icon">
                     <span class="material-symbols-outlined">cake</span>
                 </div>
-                <p class="stat-label">Total Products</p>
-                <p class="stat-value">42</p>
+                <p class="stat-label">Total de productos</p>
+                <p class="stat-value" id="dashboard-total-products">0</p>
             </div>
             <div class="stat-card tertiary">
                 <div class="stat-icon">
                     <span class="material-symbols-outlined">trending_up</span>
                 </div>
-                <p class="stat-label">Active Orders</p>
-                <p class="stat-value">18</p>
+                <p class="stat-label">Productos con poco stock</p>
+                <p class="stat-value" id="dashboard-low-stock">0</p>
             </div>
             <div class="stat-card container">
                 <div class="stat-icon">
                     <span class="material-symbols-outlined">star</span>
                 </div>
-                <p class="stat-label">Top Flavor</p>
-                <p class="stat-value">Pistachio</p>
+                <p class="stat-label">Categoría principal</p>
+                <p class="stat-value" id="dashboard-top-category">Sin datos</p>
             </div>
         </section>
         <section class="table-container">
             <table>
                 <thead>
                     <tr>
-                        <th>Product</th>
-                        <th>Category</th>
-                        <th>Price</th>
+                        <th>Producto</th>
+                        <th>Categoría</th>
+                        <th>Precio</th>
                         <th>Stock</th>
-                        <th style="text-align: right;">Actions</th>
+                        <th style="text-align: right;">Acciones</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody id="productos-tbody">
                     <tr>
                         <td>
                             <div class="product-info">
@@ -194,7 +194,7 @@
                 </tbody>
             </table>
             <div class="pagination">
-                <p class="pagination-info">Showing 3 of 42 products</p>
+                <p class="pagination-info">Mostrando 3 de 42 productos</p>
                 <div class="pagination-controls">
                     <button class="page-btn"><span class="material-symbols-outlined">chevron_left</span></button>
                     <button class="page-btn active">1</button>
@@ -209,52 +209,61 @@
     <div class="modal-overlay">
         <div class="modal-content">
             <div class="modal-header">
-                <h3>Add New Indulgence</h3>
+                <h3>Agregar postre</h3>
                 <label class="close-modal" for="modal-trigger">
                     <span class="material-symbols-outlined">close</span>
                 </label>
             </div>
-            <form class="modal-body">
+            <form class="modal-body" id="form-producto">
                 <div class="form-group full-width">
-                    <label class="form-label">Product Name</label>
-                    <input class="form-input" placeholder="e.g. Lavender Honey Cake" type="text" />
+                    <label class="form-label">Nombre del producto</label>
+                    <input id="producto_nombre" class="form-input" placeholder="Ej. Torta de vainilla" type="text" />
                 </div>
                 <div class="form-group full-width">
-                    <label class="form-label">Description</label>
-                    <textarea class="form-textarea" placeholder="Briefly describe the indulgence..."
+                    <label class="form-label">Descripción</label>
+                    <textarea id="producto_descripcion" class="form-textarea" placeholder="Describe brevemente el postre..."
                         rows="3"></textarea>
                 </div>
                 <div class="form-group">
-                    <label class="form-label">Price ($)</label>
-                    <input class="form-input" placeholder="0.00" step="0.01" type="number" />
+                    <label class="form-label">Precio en pesos</label>
+                    <input id="producto_precio" class="form-input" placeholder="0" step="1" type="number" min="0" />
                 </div>
                 <div class="form-group">
-                    <label class="form-label">Category</label>
-                    <select class="form-select">
+                    <label class="form-label">Categoría</label>
+                    <select id="producto_categoria" class="form-select">
                         <option>Macarons</option>
-                        <option>Cakes</option>
-                        <option>Pastries</option>
-                        <option>Tarts</option>
+                        <option>Tortas</option>
+                        <option>Postres</option>
+                        <option>Tartas</option>
                     </select>
                 </div>
+                <div class="form-group">
+                    <label class="form-label">Stock</label>
+                    <input id="producto_stock" class="form-input" placeholder="0" type="number" min="0" />
+                </div>
                 <div class="form-group full-width">
-                    <label class="form-label">Image URL</label>
+                    <label class="form-label">Imagen</label>
                     <div class="upload-group">
-                        <input class="form-input" placeholder="https://images.unsplash.com/..." type="url" />
-                        <button class="btn-upload" type="button">Upload</button>
+                        <label class="btn-upload" for="producto_imagen">Elegir imagen</label>
+                        <input id="producto_imagen" class="form-input file-input" accept="image/*" type="file" />
+                    </div>
+                    <div class="image-preview">
+                        <img id="producto_imagen_preview" alt="" />
+                        <span id="producto_imagen_texto">No hay imagen seleccionada</span>
                     </div>
                 </div>
                 <div class="modal-info-box">
                     <div class="info-icon">
                         <span class="material-symbols-outlined">info</span>
                     </div>
-                    <p>Products will be added to the live catalog immediately. Ensure photography matches our <span
-                            style="color: var(--primary); font-weight: 700;">Luxe Aesthetic</span>.</p>
+                    <p>Los productos se agregarán al catálogo en vivo de inmediato. Asegúrate de que la fotografía
+                        coincida con nuestra <span style="color: var(--primary); font-weight: 700;">estética
+                            premium</span>.</p>
                 </div>
             </form>
             <div class="modal-footer">
-                <label class="btn-discard" for="modal-trigger">Discard</label>
-                <button class="btn-save" type="button">Save Dessert</button>
+                <label class="btn-discard" for="modal-trigger">Descartar</label>
+                <button class="btn-save" id="btn-save-product" type="button">Guardar postre</button>
             </div>
         </div>
     </div>
