@@ -217,6 +217,25 @@
             transform: scale(1.1);
         }
 
+        .product-empty {
+            grid-column: 1 / -1;
+            padding: 40px;
+            border-radius: var(--radius-card);
+            background: var(--surface-container-lowest);
+            border: 1px dashed rgba(227, 189, 195, 0.5);
+            text-align: center;
+        }
+
+        .product-empty h3 {
+            font-family: var(--font-display);
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+
+        .product-empty p {
+            color: var(--on-surface-variant);
+        }
+
         .badge {
             position: absolute;
             top: 16px;
